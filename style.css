@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background: rgb(230, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.calculator {
+    width: 400px;
+    height: 85vh;
+    background: rgb(61, 61, 61);
+    border: 2px solid rgb(15, 15, 15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-around;
+    height: 25%;
+    width: 80%;
+    margin: 1rem;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.75);
+    /* border-radius: 0.5rem; */
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-display {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.75);
+    height: 0.9rem;
+    font-size: 0.9rem;
+}
+
+.current-display {
+    width: 100%;
+    height: 1.3rem;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.keys-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    font-weight: bold;
+}
+
+.key {
+    width: 1fr;
+    height: 3.2rem;
+    background: rgb(180, 180, 180);
+    border: 1px solid rgba(47, 47, 47, 0.75);
+    /* margin: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* border-radius: 0.5rem; */
+    transition: 0.1s ease;
+    font-size: 1rem;
+}
+
+.key:hover {
+    background: rgb(170, 170, 170);
+}
+
+.cleardel {
+    background: rgb(184, 43, 33);
+    color: rgb(245, 245, 245);
+    grid-column: span 2;
+    width: 100%;
+}
+
+.cleardel:hover {
+    background: rgb(221, 44, 31);
+}
+
+.operator {
+    background: rgb(36, 124, 206);
+    color: rgb(245, 245, 245);
+}
+
+.operator:hover {
+    background: rgb(0, 94, 182);
+}
+
+.operate {
+    background: rgb(255, 202, 44);
+}
+
+.operate:hover {
+    background: rgb(255, 191, 0);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0.5rem;
+    width: 250px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+.social > a {
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+.social > a:hover {
+    color: rgb(200, 137, 1);
+}
