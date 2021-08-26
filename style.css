@@ -143,3 +143,15 @@
 .social > a:hover {
     color: rgb(200, 137, 1);
 }
+
+@media only screen and (max-width: 480px) {
+    .calculator {
+        width: 100vw;
+        height: 85vh;
+    }
+
+    .key {
+        width: 1fr;
+        height: 2.8rem;
+    }
+}
